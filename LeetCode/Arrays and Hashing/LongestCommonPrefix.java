@@ -1,8 +1,8 @@
 
 import java.util.Arrays;
 
-//Minha solução
-class Solution {
+
+class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         String maxPrefix = "";
         for(int i = 0; i < strs[0].length(); i++){
@@ -16,7 +16,7 @@ class Solution {
     }
 }
 
-//A melhor solução
+
 // class Solution {
 //     public String longestCommonPrefix(String[] v) {
 //         StringBuilder ans = new StringBuilder();

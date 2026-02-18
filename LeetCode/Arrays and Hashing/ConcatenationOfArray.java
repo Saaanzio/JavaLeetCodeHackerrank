@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-// MINHA SOLUÇÃO
-class Solution {
+
+class ConcatenationOfArray {
     public static int[] getConcatenation(int[] nums) {
         int[] ans = new int[nums.length * 2];
         for(int i = 0; i < ans.length; i++){
@@ -12,7 +12,7 @@ class Solution {
     }
 }
 
-//Solução mais efetiva do Leetcode
+
 // public int[] getConcatenation(int[] nums) {
 //     int len = nums.length;
 //     int[] ans = new int[2*len];

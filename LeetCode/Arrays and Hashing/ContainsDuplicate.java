@@ -1,7 +1,7 @@
 
 import java.util.HashMap;
 
-//A minha solução, que é a mais efetiva ;)
+
 public class ContainsDuplicate {
     public static boolean containsDuplicate(int[] nums) {
         HashMap<Integer,Integer> hashMap = new HashMap<>();
