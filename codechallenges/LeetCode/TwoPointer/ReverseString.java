@@ -1,3 +1,4 @@
+package TwoPointer;
 class ReverseString{
     public void reverseString(char[] s) {
         for(int i = 0, j = s.length - 1; i <= (s.length-1) / 2; i++, j--){

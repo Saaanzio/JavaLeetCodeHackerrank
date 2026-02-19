@@ -1,5 +1,4 @@
-
-import java.util.HashMap;
+package SlidingWindow;
 
 public class BestTimeToBuyAndSellStock {
     public static int maxProfit(int[] prices) {
