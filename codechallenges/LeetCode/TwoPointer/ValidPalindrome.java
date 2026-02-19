@@ -9,3 +9,4 @@ class ValidPalindrome{
         return true;
     }
 }
+//Character.isLetterOrDigit(c);
