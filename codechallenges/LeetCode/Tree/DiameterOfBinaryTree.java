@@ -1,10 +1,5 @@
 package Tree;
 
-public class DiameterOfBinaryTree {
-
-}
-
-
 //class Solution {
 //    public int maxHeight(TreeNode root) {
 //        if(root == null) return 0;
