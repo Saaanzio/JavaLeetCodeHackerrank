@@ -1,5 +1,3 @@
-import java.math.BigInteger;
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -10,33 +8,28 @@ import java.math.BigInteger;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        StringBuilder sb = new StringBuilder();
-        while(l1 != null){
-            sb.append(l1.val);
-            l1 = l1.next;
-        }
-        BigInteger value1 = new BigInteger(sb.reverse().toString());
-        sb.setLength(0);
-        while(l2 != null){
-            sb.append(l2.val);
-            l2 = l2.next;
-        }
-        BigInteger value2 = new BigInteger(sb.reverse().toString());
-        String ans = new StringBuilder(new BigInteger(value1 + value2)).reverse().toString();
-        ListNode head = null;
-        ListNode aux = null;
-        char[] c = ans.toCharArray();
-        ListNode first = new ListNode(c[0] - '0');
-        head = first;
-        aux = first;
-        for(int i = 1; i < c.length; i++){
-            head = new ListNode(c[i] - '0');
-            aux.next = head;
-            aux = head;
-        }
-        return first;
-
-    }
-}
+//class Solution {
+//    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+//        ListNode dummy = new ListNode(0);
+//        ListNode res = dummy;
+//        int total = 0, carry = 0;
+//        while( l1 != null || l2 != null || carry != 0){
+//            total = carry;
+//
+//            if(l1 != null){
+//                total += l1.val;
+//                l1 = l1.next;
+//            }
+//
+//            if(l2 != null){
+//                total += l2.val;
+//                l2 = l2.next;
+//            }
+//            int num = total % 10;
+//            carry = total / 10;
+//            dummy.next = new ListNode(num);
+//            dummy = dummy.next;
+//        }
+//        return res.next;
+//    }
+//}
